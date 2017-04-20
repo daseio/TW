@@ -1,0 +1,134 @@
+body {
+margin:0 auto;
+padding:0;
+font:76% Arial;
+background:#eaeaea url(imagini/background2.jpg) top center repeat;
+color:#3a3a3a;
+}
+#pagina {
+background:#808080  ;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+color:#303030;
+margin:0 auto;
+margin-top: 0px;
+padding:5px 5px;
+width: 960px;
+background:rgba(191, 127, 63,0.5)
+}
+/***** Header *****/
+#header {
+color:#505050;
+background: url(imagini/titlu.png) bottom left repeat;
+background-size: 100% 100%;
+height:200px;
+margin:0 0 0px 0;
+padding:0;
+}
+#header h1 {
+font-size:2.5em;
+font-weight:normal;
+letter-spacing:-2px;
+margin:0 0 4px 15px;
+padding:15px 0 0 0;
+}
+#header p {
+font-size:1.1em;
+letter-spacing:-1px;
+margin:0 0 20px 15px;
+padding:0 0 0 3px;
+}
+/***** Meniul *****/
+
+/*Proprietati meniu*/
+#meniu li {
+ margin:1px 0;
+ background:url(imagini/backgroundMeniu2.png);
+ padding:1px;
+ list-style-type:none;
+ font-weight:600;
+ text-align:left;
+
+}
+#meniu li a {
+ display:block;
+ margin:0;
+ font-weight:normal;
+}
+  /* Proprietati pentru nivelul doi din meniul vertical */
+#meniu li:hover ul {
+ display:block;
+}
+#meniu li ul {
+ display:none;
+ position:relative;
+ margin:-1px 0 -2px 0;
+ padding:1px 0;
+}
+a:hover {
+    background-color:#000000;
+}
+#meniu {
+  clear:left;
+  float:left;
+  width:150px;
+  margin:0 0 10px 0;
+  padding:0;
+  position: fixed;
+}
+
+#meniu ul {
+  list-style:none;
+  width:150px;
+  margin:0 0 20px 0;
+  padding:0;
+}
+#meniu li {
+  margin-bottom:5px;
+}
+#meniu li a {
+  font-weight:bold;
+  height:20px;
+  text-decoration:none;
+  color:#FFD700	;
+  display:block;
+  padding:6px 0 0 10px;
+  background:#f4f4f4
+  border-top:1px solid #d8d8d8;
+  border-right:1px solid #d8d8d8;
+  border-bottom:1px solid #d8d8d8;
+  border-left:4px solid #cccccc;
+}
+#meniu ul ul {
+  margin:5px 0 5px 15px;
+  font-size:0.9em;
+  width:135px;
+}
+#meniu ul ul a {
+  height:16px;
+  margin:0;
+  padding:4px 0 0 8px;
+}
+#meniu h2 {
+  font-size:1.5em;
+  font-weight:normal;
+}
+/***** Main content *****/
+#continut {
+  margin:10px 14px 10px 160px;
+  padding:0;
+  line-height:1.5em;
+  text-align:left;
+  font-weight: 9000 ;
+  color: black;
+  font-family:Arial Black;
+  font-size: 18px ;
+}
+#continut p{text-indent: 50px;}
+#continut h2 {
+  font-size:1.8em;
+  letter-spaciSng:-1px;
+  font-weight:normal;
+  margin:8px 0 10px 0;
+  padding:0;
+}
