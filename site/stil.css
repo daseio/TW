@@ -5,6 +5,14 @@ font:76% Arial;
 background:#eaeaea url(imagini/background2.jpg) top center repeat;
 color:#3a3a3a;
 }
+table{
+color:blue;
+font-size:25px;
+}
+td{
+padding:20px;
+}
+
 #pagina {
 background:#808080  ;
 background-repeat: no-repeat;
