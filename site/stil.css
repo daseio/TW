@@ -2,7 +2,7 @@ body {
 margin:0 auto;
 padding:0;
 font:76% Arial;
-background:#eaeaea url(imagini/background2.jpg) top center repeat;
+background:#eaeaea url(imagini/background3.jpg) top center repeat;
 color:#3a3a3a;
 }
 table{
@@ -51,7 +51,7 @@ padding:0 0 0 3px;
 /*Proprietati meniu*/
 #meniu li {
  margin:1px 0;
- background:url(imagini/backgroundMeniu2.png);
+ background:url(imagini/backgroundMeniu3.png);
  padding:1px;
  list-style-type:none;
  font-weight:600;
@@ -74,7 +74,7 @@ padding:0 0 0 3px;
  padding:1px 0;
 }
 a:hover {
-    background-color:#000000;
+    background-color:#d4ff00;
 }
 #meniu {
   clear:left;
@@ -98,10 +98,10 @@ a:hover {
   font-weight:bold;
   height:20px;
   text-decoration:none;
-  color:#FFD700	;
+  color:#000000	;
   display:block;
   padding:6px 0 0 10px;
-  background:#f4f4f4
+  
   border-top:1px solid #d8d8d8;
   border-right:1px solid #d8d8d8;
   border-bottom:1px solid #d8d8d8;
@@ -127,7 +127,6 @@ a:hover {
   padding:0;
   line-height:1.5em;
   text-align:left;
-  font-weight: 9000 ;
   color: black;
   font-family:Arial Black;
   font-size: 18px ;
@@ -135,7 +134,6 @@ a:hover {
 #continut p{text-indent: 50px;}
 #continut h2 {
   font-size:1.8em;
-  letter-spaciSng:-1px;
   font-weight:normal;
   margin:8px 0 10px 0;
   padding:0;

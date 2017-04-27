@@ -7,11 +7,27 @@
         <link rel="shortcut icon" href="imagini/icon.png">
         <title>Stories on the Web</title>
     </head>
+	<?php
+   if(isset($_FILES['file'])){
+      $errors= array();
+      $file_name = $_FILES['file']['name'];
+      $file_size =$_FILES['file']['size'];
+      $file_tmp =$_FILES['file']['tmp_name'];
+      $file_type=$_FILES['file']['type'];
+      $file_ext=strtolower(end(explode('.',$_FILES['file']['name'])));
+      
+      $expensions= array("pdf","xml","json");
+      
+      if(in_array($file_ext,$expensions)=== false){
+         $errors[]="extension not allowed, please choose a PDF or XML file.";
+      }
+   }
+?>
     <body>
         <div id="pagina">
            <div id="header">
             </div>
-             <div id="meniu">
+            <div id="meniu">
                 <ul>
                     <li><a class="current" href="primapagina.html">Home</a></li>
                     <li><a >Lista carti</a>
@@ -32,27 +48,16 @@
 					</li>
                 </ul>
             </div>
-            <div id="continut">
-			
-			    <h3>Pentru ajutor, ne puteti gasi la urmatoarele email-uri:</h3>
-				<table >
-					<tr>
-					<td>Darie Sergiu-Ionut </td>
-					<td>sergiu.darie@info.uaic.ro</td>
-					</tr>
-					<tr>
-					<td>Fedeles Andreia</td>
-					<td>andreia.fedeles@info.uaic.ro</td>
-					</tr>
-					<tr>
-					<td>Sofian George-Andrei</td>
-					<td>george.sofian@info.uaic.ro</td>
-					</tr>
-					
-				</table>
-				
-
-            </div>
-        </div>
+		<div align="center" id="formular">
+		<br><br><br><br><br><br>
+		    <form action="upload.php" method="post" enctype="multipart/form-data">
+                <b><h1><p color="blue">Selectati cartea pentru a fi incarcata:</p></h1></b>
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Incarca" name="submit">
+            </form>
+		</div>
     </body>
-</html>
+	
+</html>			
+			
+    
