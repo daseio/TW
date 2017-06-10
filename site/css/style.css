@@ -1,0 +1,321 @@
+header{
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/reading.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header ul li a{
+    text-transform: capitalize;
+    color: #fafafa !important;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul a{
+     
+}
+
+.lead{
+    color: #eee;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background: #fafafa !important;
+    color: #333 !important;
+}
+
+nav ul li.brand{
+    color: #fafafa !important;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px
+}
+
+nav ul,
+.header-text,
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fafafa;
+    transform: translate(-50%, -50%);
+}
+
+.header-text h1{
+    font-size: 55px;
+}
+
+.header-text p{
+    font-size: 20px;
+}
+
+nav ul div li a{
+    font-size: 25px;
+    display: block;
+    margin: 0 15px;
+    transition: color .3s ease;
+}
+
+.navbar-right li:hover a{
+    color: #999 !important;
+}
+
+.navbar-right{
+    float: right;
+}
+
+.navbar-inverse{
+    background: transparent !important;;
+    border: none !important;
+}
+
+.section-header-text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.section-header-text h1{
+    font-size: 60px;
+    color: #fafafa;
+    text-transform: capitalize;
+}
+
+a.btn-primary{
+    background: transparent;
+    border: 2px solid #000;
+    padding: 5px 25px;
+    font-size: 16px;
+    color: #fafafa;
+    transition: all .3s ease;
+}
+
+a.btn-primary:hover{
+    background: #fafafa;
+    color: #333;
+}
+
+main{
+    background: #ECECEC;
+    padding-bottom: 50px;
+}
+
+.book-preview{
+    padding: 15px;
+    background: #fff;
+    border:2px solid #eee;
+    transition: all .3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.book-preview:hover{
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.3);
+}
+
+.book-preview .preview-img img{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.book-title{
+    font-weight: bold;
+    display: block;
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.book-description{
+    font-size: 14px;
+}
+
+
+.second-title{
+    font-size: 35px;
+    margin: 0;
+    padding-top: 35px;
+}
+
+.full-description{
+    display: block;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #446CB3;
+}
+
+
+.about-author{
+    font-size: 16px;
+    margin-top: 15px;
+    display: block;
+}
+
+main{
+    position: relative;
+    background: url(../img/bottom.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 350px;
+    background-size: 81%;
+    
+}
+main:before,
+main:after{
+    content: "";
+    width: 90px;
+    min-height: 100%;
+    position: absolute;
+    z-index: 222;
+    top: 0;
+    background-repeat: repeat-y;
+    
+}
+
+main:before{
+    background: url(../img/le.png);
+     left: 0px;
+    background-repeat-x: no-repeat;
+    background-size: contain;
+}
+
+main:after{
+    background: url(../img/ri.png);
+    right: 0px;
+    background-size: contain;
+}
+
+.btn-cstm {
+    margin-top: 15px;
+    text-transform: uppercase !important;
+    background: #5cb85c !important;
+    color: #fff;
+}
+
+
+.book-preview{
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px;
+}
+
+.btn-danger{
+    display: block;
+    clear: both;
+    text-align: center;
+    background: #999;
+    max-width: 200px;
+    margin: 0 auto;
+    color: #fff;
+    transition: background .3s ease-in;
+}
+
+.btn-danger:hover{
+    background: #333;
+}
+
+.form-control{
+    padding: 5px 15px;
+}
+
+#carti form{
+    margin-bottom: 25px;
+}
+
+#carti form .form-group{
+    display: inline-block;
+}
+
+#carti form .form-group input[type="submit"]{
+    padding: 5px;
+}
+
+#add-post .form-group{
+    margin-bottom: 10px;
+}
+
+#add-post label{
+    display: block;
+}
+
+#add-post .form-group input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#add-post textarea{
+    width: 100%;
+    height: 100px;
+}
+
+#register label
+#login-form .form-group label.sr-only{
+    display: block !important;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+#register .form-wrap,
+#login .form-wrap{
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+#register form input{
+    width: 100%;
+}
+
+#btn-login{
+    padding: 5px 15px;
+    display: block;
+    max-width: 100px;
+    margin: 15px auto;
+}
+
+.contact-wrapper{
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-wrapper h1{
+    font-size: 45px;
+    margin-top: 20px;
+    text-transform: capitalize;    
+    text-align: center;
+    color: #333;
+}
+
+.contact-wrapper h2{
+    
+}
+
+.contact-wrapper h2 > span {
+    display: inline-block;
+    margin: 0 25px;
+    color: #666;
+}
+
