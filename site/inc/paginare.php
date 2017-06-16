@@ -21,5 +21,8 @@ function paginare($carte,$url){
 	for ($page=0;$page<$number_of_pages/10;$page++) {
 		echo '<a href="post.php?p_id='.$url.'&page=' . $page . '">' . $page . '</a> ';
 	}
+	
+	
 }
+
 ?>

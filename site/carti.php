@@ -13,13 +13,40 @@
                        <div class="form-group">
                            <select name="filter" id="" class="form-control">
                                <option value="7-12">7-12 ani</option>
-                               <option value="12-18">12-18 ani</option>
+                               <option value="12-18">12-18</option>
                            </select>
                        </div>
+					   
                        <div class="form-group"><input type="submit" name="fil" class="btn btn-success"></div>
                    </form>
                </div>
            </div>
+		   <div class="semne">
+				<?php
+					if(isset($_SESSION['username'])){
+						$id_user=mysqli_fetch_array(mysqli_query($connection, "select * from users where username='".$_SESSION['username']."'"));
+						$id=$id_user['user_id'];
+						$query = "SELECT s.semn,p.post_title from semn_carte s, posts p  WHERE id_user='{$id}' and s.id_carte=p.post_id";
+
+                        $search_query = mysqli_query($connection, $query);
+
+                        confirm($search_query);
+
+                        $count = mysqli_num_rows($search_query);
+						echo '<h3>Semne de carte:';
+                         while($row = mysqli_fetch_array($search_query)){
+                            $link = $row['semn'];
+							$nume_carte =$row['post_title'];
+							
+							 echo ' <a href="'.$link.'">'.$nume_carte.' ,</a>' ;
+						 }
+						echo ' </h3>';
+					
+					   
+					}
+					   ?>
+
+					   </div>
             <div class="row">
                
                 <?php
@@ -76,8 +103,9 @@
                 ?>
                    <div class="col-md-4">
                         <div class="book-preview">
-                            <div class="preview-img"><img src="img/<?php echo $post_image;?>" alt=""></div>
-                            <span class="about-author">Trimits de: <strong><?php echo $post_author; ?></strong> la data: <strong class="date"><?php echo $post_date; ?></strong></span>
+                            <div class="preview-img"><img src="img/<?php echo $post_image;?>" alt=""width=200 height=350></div>
+							<span  class="date">Data adaugare:<strong><?php echo $post_date; ?></strong>
+                            <span class="about-author">Autor: <strong><?php echo $post_author; ?></strong> </span>
                             <span class="book-title"><?php echo $post_title; ?></span>
                             <span class="book-description"><?php echo $post_content_preview; ?></span>
                             <span class="full-description"><a href="post.php?p_id=<?php echo $post_id; ?>">Read more</a></span>

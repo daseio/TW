@@ -38,8 +38,9 @@
                 ?>
                    <div class="col-md-4">
                         <div class="book-preview">
-                            <div class="preview-img"><img src="img/<?php echo $post_image;?>" alt=""></div>
-                            <span class="about-author">Trimits de: <strong><?php echo $post_author; ?></strong> la data: <strong class="date"><?php echo $post_date; ?></strong></span>
+                            <div class="preview-img"><img src="img/<?php echo $post_image;?>" alt=""width=200 height=350></div>
+							<span  class="date">Data adaugare:<strong><?php echo $post_date; ?></strong>
+                            <span class="about-author">Autor: <strong><?php echo $post_author; ?></strong> </span>
                             <span class="book-title"><?php echo $post_title; ?></span>
                             <span class="book-description"><?php echo $post_content_preview; ?></span>
                             <span class="full-description"><a href="post.php?p_id=<?php echo $post_id; ?>">Read more</a></span>
@@ -47,7 +48,8 @@
                         </div>
                     </div>
                         
-                <?php } ?>
+                <?php
+				} ?>
                
                 
                 <div class="col-xs-6 col-xs-offset-3 text-center"><a href="carti.php" class="btn btn-danger  btn-lg">Vezi toate cartile</a></div>
