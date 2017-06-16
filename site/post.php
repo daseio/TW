@@ -32,11 +32,18 @@
         ?>
           
           <div class="col-xs-12">
-              <img src="img/<?php echo $post_image;?>" alt="">
+              <img src="img/<?php echo $post_image;?>" alt=""width=200 height=200">
               <div>
                  <span class="book-title"><?php echo $post_title; ?></span>
-                  <span class="book-description"><?php echo $post_content; ?></span>
-              </div>
+                 <?php
+				 require_once('inc/paginare.php');
+					   
+
+					paginare($post_content, $post_id);
+					
+				 ?>
+				  
+			  </div>
           </div>
 
         <?php } ?>
