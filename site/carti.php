@@ -37,8 +37,7 @@
                          while($row = mysqli_fetch_array($search_query)){
                             $link = $row['semn'];
 							$nume_carte =$row['post_title'];
-							
-							 echo ' <a href="'.$link.'">'.$nume_carte.' ,</a>' ;
+							 echo ', <a href="'.$link.'">'.$nume_carte.'</a>' ;
 						 }
 						echo ' </h3>';
 					
@@ -74,7 +73,8 @@
                             <span class="about-author">Trimits de: <strong><?php echo $post_author; ?></strong> la data: <strong class="date"><?php echo $post_date; ?></strong></span>
                             <span class="book-title"><?php echo $post_title; ?></span>
                             <span class="book-description"><?php echo $post_content_preview; ?></span>
-                            <span class="full-description"><a href="post.php?p_id=<?php echo $post_id; ?>">Read more</a></span>
+							
+                            <span class="full-description"><?php echo'<a href="post.php?p_id='.$post_id.'&page=0">Read more</a>'?></span>
                             
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                             <span class="about-author">Autor: <strong><?php echo $post_author; ?></strong> </span>
                             <span class="book-title"><?php echo $post_title; ?></span>
                             <span class="book-description"><?php echo $post_content_preview; ?></span>
-                            <span class="full-description"><a href="post.php?p_id=<?php echo $post_id; ?>">Read more</a></span>
+                            <span class="full-description"><?php echo'<a href="post.php?p_id='.$post_id.'&page=0">Read more</a>'?></span>
                             
                         </div>
                     </div>

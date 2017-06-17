@@ -18,6 +18,8 @@
                             <div class="navbar-right">
                                 <li><a href="index.php">Home</a></li>
                                 <li><a href="carti.php">Carti</a></li>
+							    <li><a href="clasament.php">Clasament</a></li>
+
                                 <li><a href="contact.php">Contact</a></li>
                                 <li>
                                     <?php if(isset($_SESSION['username'])){ ?> <a href="logout.php">LOGOUT</a>

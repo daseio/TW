@@ -43,8 +43,7 @@
                             <span class="about-author">Autor: <strong><?php echo $post_author; ?></strong> </span>
                             <span class="book-title"><?php echo $post_title; ?></span>
                             <span class="book-description"><?php echo $post_content_preview; ?></span>
-                            <span class="full-description"><a href="post.php?p_id=<?php echo $post_id; ?>">Read more</a></span>
-                            
+							<span class="full-description"><?php echo'<a href="post.php?p_id='.$post_id.'&page=0">Read more</a>'?></span>                            
                         </div>
                     </div>
                         

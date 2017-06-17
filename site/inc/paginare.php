@@ -9,16 +9,16 @@ function paginare($carte,$url){
 	}
     $arr = str_split($carte, 100);
 	$number_of_pages = count($arr);
-	for($i=$page*10; $i<$page*10+10;$i++){
+	for($i=$page*20; $i<$page*20+20;$i++){
 		if($i<$number_of_pages){
-			echo $arr[$i].'<br>' ;
+			echo '<font size="5">'.$arr[$i].'</font><br>' ;
 		}
 	}
 		
 
 
 
-	for ($page=0;$page<$number_of_pages/10;$page++) {
+	for ($page=0;$page<$number_of_pages/20;$page++) {
 		echo '<a href="post.php?p_id='.$url.'&page=' . $page . '">' . $page . '</a> ';
 	}
 	
