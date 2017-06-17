@@ -11,7 +11,7 @@ function paginare($carte,$url){
 	$number_of_pages = count($arr);
 	for($i=$page*20; $i<$page*20+20;$i++){
 		if($i<$number_of_pages){
-			echo '<font size="5">'.$arr[$i].'</font><br>' ;
+			echo '<font size="6">'.$arr[$i].'</font><br>' ;
 		}
 	}
 		
