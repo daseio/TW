@@ -4,9 +4,10 @@
         <div class="container">
            <div class="row">
                <div class="col-xs-12">
-                   <h2 class="second-title">
+                   <h1 class="second-title">
                        See our books 
-                   </h2>
+                   </h1>
+				   <br>
                </div>
            </div>
             <div class="row">
